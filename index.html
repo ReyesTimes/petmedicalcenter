@@ -21,7 +21,10 @@
             messagingSenderId: "763637083019"
         };
         firebase.initializeApp(config);
-        console.log( firebase );
+
+        var database = firebase.database();
+
+        console.log( database );
      </script>
 </body>
 </html>
