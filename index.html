@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pet Medical Center</title>
+    <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
 </head>
 <body>
     <h1 class="title"></h1>
 
-    <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
     <script>
         var title = document.querySelector( '.title' );
         console.log( title );
@@ -24,9 +24,14 @@
         };
         firebase.initializeApp(config);
 
-        var database = firebase.database().ref();
+        var dbRef = firebase.database().ref().child( 'version' );
 
-        console.log( database );
+        dbRef.on(
+            'value',
+            function( res ) {
+                console.log( res );
+            }
+        );
      </script>
 </body>
 </html>
