@@ -1,0 +1,19 @@
+{
+  "name": "petmedicalcenter",
+  "version": "1.0.0",
+  "description": "landing page pet medical center",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReyesTimes/petmedicalcenter.git"
+  },
+  "author": "reyestimes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReyesTimes/petmedicalcenter/issues"
+  },
+  "homepage": "https://github.com/ReyesTimes/petmedicalcenter#readme"
+}
